@@ -1,0 +1,214 @@
+/* Start Variables */
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* :root {
+    --main-color: #2196F3;
+    --main-color-atl: #1787e0;
+    --section-padding: 60px;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --section-background: #ECECEC;
+} */
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* End Variables */
+/* Start nav */
+.nav{
+    position: relative;
+    -webkit-box-shadow: 0 0 10px #ddd;
+    -moz-box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #ddd;
+}
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.logo {
+    font-size: 26px;
+    color: #131921;
+    justify-content: center;
+    align-items: center;
+}
+.logo:hover {
+    color: #C97C07;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.nav .container .main-nav ul{
+    display: flex;
+}
+.nav .container .main-nav ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 30px;
+    font-size: 18px;
+    color: #131921;
+}
+.nav .container .main-nav ul li a:hover{
+    color: #C97C07;
+    transition: 0.3s ;
+}
+/* End nav */
+/* Start product*/
+.main-product{
+    position: relative;
+    padding: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-product .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 10px;
+}
+.main-product .container img {
+    max-width: 100%;
+    width: 400px;
+    margin-bottom: 10px;
+}
+.main-product .container .card {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.main-product .container .card .info h2{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.main-product .container .card .info p {
+    line-height: 1.5;
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+}
+.main-product .container .card .info a{
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #C97C07;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;    
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    transition: all 250ms;
+    margin-bottom: 10px;
+}
+/* End product*/
+/* details product */
+.details-product {
+    position: relative;
+    padding: 90px;
+    display: flex;
+
+}
+.details-product .container {
+    display: flex;
+    flex-direction: row;
+}
+.details-product .container .box {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.details-product .container .image {
+    flex-direction: row;
+}
+.details-product .container img {
+    max-width: 100%;
+    width: 200px;
+    margin-right:20px;
+}
+.details-product .container .info {
+    max-width: 100%;
+    flex-basis: 70%;
+}
+.details-product .container .info h2 {
+    margin-left: 20px;
+    width: 50%;
+}   
+.details-product .container .info p {
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+    width: 50%;
+}
+.details-product .container .video video{
+    width: 400px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.details-product .container .info ul {
+    margin-bottom: 20px;
+    list-style: square;
+    margin-left: 30px;
+    width: 50%;
+}
+.details-product .container .info a {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #C97C07;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    transition: all 250ms;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+/* details product */
